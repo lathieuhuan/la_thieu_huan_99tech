@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-400: #1a2543;
+  --color-primary-600: #0e0e2a;
+  --color-secondary: #9b049d;
+}
+
+:root {
+  @apply bg-primary-400 text-white;
+  font-family: Oxanium, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .fancy-text-bg {
+    background: linear-gradient(93.69deg, #f90cff, #6560ff 50.52%, #0cd7e8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

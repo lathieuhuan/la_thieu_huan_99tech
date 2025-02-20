@@ -1,0 +1,18 @@
+.app-input-number {
+  input {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    width: 100%;
+    min-height: 2rem;
+    padding: 0 0.5rem;
+
+    &:focus {
+      background-color: var(--color-slate-200);
+    }
+    &:disabled {
+      opacity: 0.6;
+    }
+  }
+}
